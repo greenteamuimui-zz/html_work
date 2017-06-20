@@ -26,13 +26,14 @@
         <li>Golden syrup, jam, peanut butter or condensed milk</li>
       </ul>
     </aside>
+
     <section>
       <h1>Hong Kong style French Toast</h1>
       <figure>
         <img src="http://www.saucy-spatula.com/wp-content/uploads/2014/11/hong-kong-style-french-toast-featured.jpg" alt="Yum!" />
       </figure>
       <figcaption>
-        <a href="https://en.wikipedia.org/wiki/French_toast#Hong_Kong">Learn about it on Wiki</a>
+        <a                          href="https://en.wikipedia.org/wiki/French_toast#Hong_Kong">Learn about it on Wiki</a>
       </figcaption>
       <h2>Description</h2>
       <a name="P1" />
@@ -47,6 +48,39 @@
         <li>Slap on a large cube of butter, drizzle condensed milk or golden syrup (made from sugar cane, not maple syrup) and serve.</li>
       </ol>
     </section>
+
+    <section>
+      <form action="/reviews" method="post">
+        <label for="name_reviewr">Name</label>
+        <input type="text" id = "name_viewer">
+        <label for="rating">Rating</label>
+        <input type="radio" id = "1" name = "rating" checked>
+        <label for="1">1</label>
+        <input type="radio" id = "2" name = "rating">
+        <label for="2">2</label>
+        <input type="radio" id = "3" name = "rating">
+        <label for="3">3</label>
+        <input type="radio" id = "4" name = "rating">
+        <label for="4">4</label>
+        <input type="radio" id = "5" name = "rating">
+        <label for="5">5</label>
+        <br>
+
+        <label for="cookingexpertise">Cooking Expertise</label>
+        <select id = "cookingexpertise" name="cookingexpertise">
+          <option value="e1" selected disabled>Select Cooking Expertise</option>
+          <option value="e2">Sometimes Cook</option>
+          <option value="e3">Cook Everyday</option>
+          <option value="e4">Cooking is a Hobby</option>
+          <option value="e5">Professional Chef</option>
+        </select>
+        <br>
+        <label>Review<br><textarea name="name" rows="8" cols="80"></textarea></label>
+        <br>
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
+
     <footer>
       <p>The recipe comes from <a href="http://www.huffingtonpost.com/2012/12/10/hong-kong-french-toast-iced-milk-tea_n_2271506.html">Huffingtonpost!</a></p>
     </footer>
