@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Greenteamuimui HK Kitchen</title>
+    <meta charset="utf-8">
     <meta name="description" content="Authentic, delicious, easy-to-made, Hong Kong Food to make at home, great for kids and family ">
-
-    <script type="text/javascript" src="external_javascript_example.js"/>
-
-    <link rel="stylesheet" href="css_reset.css" type="text/css">
+    <!-- <link rel="stylesheet" href="/css_reset.css" type="text/css"> -->
+    <link rel="stylesheet" href="/home/greenteamuimui/AAbootcamp/homeworks/W3D5/html/css_ex.css" type="text/css">
+    <script type="text/javascript" src="/home/greenteamuimui/AAbootcamp/homeworks/W3D5/html/external_javascript_example.js"/>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,7 +35,7 @@
     <aside>
       <h2>Ingredients</h2>
       <a name="P2" />
-      <ul>
+      <ul class="ingredients-list">
         <li>Slices of thick, white bread</li>
         <li>2 eggs</li>
         <li>Stick of butter</li>
@@ -69,7 +68,7 @@
     <section id="reviews">
       <h2>Reviews</h2>
       <form id="review-form" action="/reviews" method="post">
-        <label for="name_reviewr">Name</label>
+        <label for="name_reviewer">Name</label>
         <input type="text" id = "name_viewer">
         <label for="rating">Rating</label>
         <input type="radio" id = "1" name = "rating" checked>
@@ -93,7 +92,8 @@
           <option value="e5">Professional Chef</option>
         </select>
         <br>
-        <label>Review<br><textarea id="review" name="review" rows="8" cols="80"></textarea></label>
+        <label>Review<br>
+          <textarea id="review" name="review" rows="8" cols="80"></textarea></label>
         <br>
         <input type="submit" value="Submit Review">
       </form>
